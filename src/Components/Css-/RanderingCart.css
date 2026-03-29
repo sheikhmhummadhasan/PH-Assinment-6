@@ -125,3 +125,10 @@
     );
     color: white !important;
 }
+@media screen and (max-width:576px) {
+    .rander-box-2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+}

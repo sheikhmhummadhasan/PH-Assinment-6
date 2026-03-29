@@ -8,10 +8,6 @@ const Simple_transperent = () => {
                 <div className="rander-box-1">
                     <h1>Simple, Transparent Pricing</h1>
                     <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-                    <div className="toggel-btn">
-                        <button className="toggel-deafult">Product</button>
-                        <button className="toggel">Cart(2)</button>
-                    </div>
                 </div>
                 <div className="rander-box-2">
 
