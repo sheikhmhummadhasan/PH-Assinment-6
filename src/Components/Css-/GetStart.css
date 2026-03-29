@@ -1,0 +1,42 @@
+.get-start{
+    max-width: 1480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.started-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.started-cart{
+    box-shadow: 4px 5px 10px #1010103f;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.started-cart h3{
+    margin: 10px 0px;
+    font-size: 2rem;
+}
+.end{
+      background: linear-gradient(45deg,
+            #4F39F6,
+            #9514FA);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: azure;
+            margin-left: 90%;
+}
+.end span {
+    color: beige;
+}
+.margin{
+    margin-top: 150px;
+}
