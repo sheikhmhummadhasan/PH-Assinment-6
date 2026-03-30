@@ -1,7 +1,7 @@
 import React from 'react';
 import './Css-/selected.css'
 
-const BuyingCart = ({ selected, handleRemove }) => {
+const BuyingCart = ({ selected, handleRemove, handleClearCart }) => {
     console.log(selected)
     const total = selected.reduce(
         (sum, item) => sum + item.price,
@@ -42,6 +42,7 @@ const BuyingCart = ({ selected, handleRemove }) => {
                     <div className="hisab">
                       <h2>Total : ${total}</h2> 
                     </div>
+                    <div className="prime-btn" onClick={handleClearCart}>Proceed to Checkout</div>
                 </section>
             }
 

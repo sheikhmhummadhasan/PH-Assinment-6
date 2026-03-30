@@ -14,6 +14,7 @@ const Crad = ({ data, selected, setSelected}) => {
                         const [buynow,setBuynow] = useState(false)
                         return (
                             <FinalCard 
+                            key={e.id}
                              e={e}
                              buynow={buynow} 
                              setBuynow={setBuynow} 

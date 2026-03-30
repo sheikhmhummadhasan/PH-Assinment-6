@@ -70,15 +70,45 @@
     border-radius: 10px;
 }
 
-.value {
+.best-seller {
     margin-left: 63%;
-    background-color: #a1a9b0;
+    background-color: #FEF3C6;
     width: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
     border-radius: 25px;
+}
+.popular {
+    margin-left: 63%;
+    background-color: #E1E7FF;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 25px;
+}
+.new {
+    margin-left: 63%;
+    background-color: #DBFCE7;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.h4-1{
+    color: #BB4D00;
+}
+.h4-2{
+    color: #4F39F6;
+}
+.h4-3{
+    color: #0A883E;
 }
 
 .buy-now {

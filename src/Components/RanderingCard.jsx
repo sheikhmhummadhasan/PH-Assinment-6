@@ -1,23 +1,31 @@
-import React, { useState } from 'react';
+import React, { } from 'react';
 import './Css-/RanderingCart.css'
 import { MdDone } from 'react-icons/md';
 import Crad from './Crad';
 import BuyingCart from './BuyingCart';
+import { toast } from 'react-toastify';
 
-const RanderingCard = ({ toggel, setToggel, data }) => {
+const RanderingCard = ({ data, toggel, setToggel, selected, setSelected }) => {
 
     function Product() {
         setToggel("Product")
     }
+
     function Cart() {
         setToggel("Cart")
     }
+
     const handleRemove = (id) => {
         setSelected(prev =>
             prev.filter(item => item.id !== id)
         );
+        toast.error("is remove successfully")
     };
-    const [selected, setSelected] = useState([])
+
+    const handleClearCart = () => {
+        setSelected([]); // empty array = সব delete
+    };
+
     console.log(selected)
     return (
         <div>
@@ -40,6 +48,7 @@ const RanderingCard = ({ toggel, setToggel, data }) => {
                         <BuyingCart
                             selected={selected}
                             handleRemove={handleRemove}
+                            handleClearCart={handleClearCart}
                         ></BuyingCart>
                 }
             </section>

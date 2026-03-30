@@ -19,15 +19,22 @@ function App() {
   const data = fetchingdata()
 
   const [toggel,setToggel] = useState('Product')
-
+  const [selected, setSelected] = useState([])
+  
+  console.log(selected)
   return (
     <div className="body">
       <>
-        <Header></Header>
+        <Header selected={selected}></Header>
         <Hero></Hero>
         <Active></Active>
         <Suspense fallback={<h1>Data is Loading...</h1>}>
-          <RanderingCard toggel={toggel} setToggel={setToggel} data={data}></RanderingCard>
+          <RanderingCard
+           toggel={toggel}
+           setToggel={setToggel} 
+           data={data} 
+           selected={selected} 
+           setSelected={setSelected}></RanderingCard>
         </Suspense>
         <Getstart></Getstart>
         <Simple_transperent></Simple_transperent>

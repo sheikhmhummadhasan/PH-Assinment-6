@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, {} from 'react';
 import { MdDone } from 'react-icons/md';
 import { toast } from 'react-toastify';
 
 const FinalCard = ({ e, buynow, setBuynow, selected, setSelected }) => {
     console.log(selected)
-    const [total,setTotal] = useState()
+
     function handelBuynow() {
         setBuynow(!buynow)
         if (buynow) {
@@ -15,12 +15,32 @@ const FinalCard = ({ e, buynow, setBuynow, selected, setSelected }) => {
         setSelected([...selected, e])
         
     }
+
+    function coloroftag(){
+        if(e.tagType === 'best seller'){
+           return 'h4-1'
+        }else if(e.tagType === 'new'){
+           return 'h4-2'
+        }else{
+           return 'h4-3'
+        }
+    }
+
+    function bgColor(){
+        if(e.tagType === 'best seller'){
+           return 'best-seller'
+        }else if(e.tagType === 'new'){
+           return 'popular'
+        }else{
+           return 'new'
+        }
+    }
     return (
         <div>
             {
                 <div className="cart">
-                    <div className="value">
-                        <h4>{e.tagType}</h4>
+                    <div className={bgColor()}>
+                        <h4 className={coloroftag()}>{e.tagType}</h4>
                     </div>
                     <img src={e.image} alt="" />
                     <h2>{e.name}</h2>
