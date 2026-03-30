@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Css-/RanderingCart.css'
 import { MdDone } from 'react-icons/md';
+import Crad from './Crad';
+import BuyingCart from './BuyingCart';
 
-const RanderingCard = () => {
+const RanderingCard = ({ toggel, setToggel, data }) => {
+
+    function Product() {
+        setToggel("Product")
+    }
+    function Cart() {
+        setToggel("Cart")
+    }
+    const handleRemove = (id) => {
+        setSelected(prev =>
+            prev.filter(item => item.id !== id)
+        );
+    };
+    const [selected, setSelected] = useState([])
+    console.log(selected)
     return (
         <div>
             <section className="rander">
@@ -10,93 +26,22 @@ const RanderingCard = () => {
                     <h1>Premium Digital Tools</h1>
                     <p>Choose from our curated collection of premium digital products designedto boost your productivity and creativity.</p>
                     <div className="toggel-btn">
-                        <button className="toggel-deafult">Product</button>
-                        <button className="toggel">Cart(2)</button>
+                        <button onClick={Product} className={toggel === 'Product' ? 'toggel-deafult' : "toggel"}>Product</button>
+                        <button onClick={Cart} className={toggel === 'Cart' ? "toggel-deafult" : "toggel"}>Cart({selected.length})</button>
                     </div>
                 </div>
-                <div className="rander-box-2">
-
-                    {/* cards */}
-
-                    <div className="cart">
-                        <div className="value">
-                            <h4>Best Selling</h4>
-                        </div>
-                        <img src="/user.png" alt="" />
-                        <h2>Book Name Heare</h2>
-                        <p>Titel about of book what you have wright her eyther not</p>
-                        <h2>$29<span id='month'>/mo</span></h2>
-                        <p className='done'><MdDone className='i'/> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <button className="buy-now">Buy Now</button>
-                    </div>
-                    <div className="cart">
-                        <div className="value">
-                            <h4>Best Selling</h4>
-                        </div>
-                        <img src="/user.png" alt="" />
-                        <h2>Book Name Heare</h2>
-                        <p>Titel about of book what you have wright her eyther not</p>
-                        <h2>$29<span id='month'>/mo</span></h2>
-                        <p className='done'><MdDone className='i'/> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <button className="buy-now">Buy Now</button>
-                    </div>
-                    <div className="cart">
-                        <div className="value">
-                            <h4>Best Selling</h4>
-                        </div>
-                        <img src="/user.png" alt="" />
-                        <h2>Book Name Heare</h2>
-                        <p>Titel about of book what you have wright her eyther not</p>
-                        <h2>$29<span id='month'>/mo</span></h2>
-                        <p className='done'><MdDone className='i'/> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <button className="buy-now">Buy Now</button>
-                    </div>
-                    <div className="cart">
-                        <div className="value">
-                            <h4>Best Selling</h4>
-                        </div>
-                        <img src="/user.png" alt="" />
-                        <h2>Book Name Heare</h2>
-                        <p>Titel about of book what you have wright her eyther not</p>
-                        <h2>$29<span id='month'>/mo</span></h2>
-                        <p className='done'><MdDone className='i'/> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <button className="buy-now">Buy Now</button>
-                    </div>
-                    <div className="cart">
-                        <div className="value">
-                            <h4>Best Selling</h4>
-                        </div>
-                        <img src="/user.png" alt="" />
-                        <h2>Book Name Heare</h2>
-                        <p>Titel about of book what you have wright her eyther not</p>
-                        <h2>$29<span id='month'>/mo</span></h2>
-                        <p className='done'><MdDone className='i'/> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <button className="buy-now">Buy Now</button>
-                    </div>
-                    <div className="cart">
-                        <div className="value">
-                            <h4>Best Selling</h4>
-                        </div>
-                        <img src="/user.png" alt="" />
-                        <h2>Book Name Heare</h2>
-                        <p>Titel about of book what you have wright her eyther not</p>
-                        <h2>$29<span id='month'>/mo</span></h2>
-                        <p className='done'><MdDone className='i'/> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <p className='done'><MdDone className='i' /> somthing right</p>
-                        <button className="buy-now">Buy Now</button>
-                    </div>
-                </div>
+                {
+                    toggel === "Product" ?
+                        <Crad
+                            data={data}
+                            selected={selected}
+                            setSelected={setSelected}
+                        ></Crad> :
+                        <BuyingCart
+                            selected={selected}
+                            handleRemove={handleRemove}
+                        ></BuyingCart>
+                }
             </section>
         </div>
     );

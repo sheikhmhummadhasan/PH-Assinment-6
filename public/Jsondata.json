@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Create professional resumes quickly with ready-made templates.",
+    "price": 9,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["50+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FileText",
+    "image": "/rocket.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume creation tools for job seekers.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "Cover letter builder", "Real-time preview"],
+    "icon": "Star",
+    "image": "/user.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Booster Pack",
+    "description": "Complete toolkit to enhance your job application process.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Resume + Cover Letter", "LinkedIn optimization", "Export unlimited PDFs"],
+    "icon": "Rocket",
+    "image": "/package.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Website Builder",
+    "description": "Build and publish your personal portfolio easily.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Custom domains", "Responsive design", "SEO optimization"],
+    "icon": "Globe",
+    "image": "/portfolio.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Preparation Kit",
+    "description": "Practice interviews and improve communication skills.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Mock interview questions", "Answer suggestions", "Performance tips"],
+    "icon": "Mic",
+    "image": "/design-tool.png"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker Pro",
+    "description": "Track and manage all your job applications in one place.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Application tracking", "Interview reminders", "Status dashboard"],
+    "icon": "CheckSquare",
+    "image": "/operation.png"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Toolkit",
+    "description": "Essential tools for freelancers to manage clients and projects.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Invoice generator", "Client management", "Project tracking"],
+    "icon": "Briefcase",
+    "image": "/portfolio.png"
+  },
+  {
+    "id": 8,
+    "name": "AI Resume Assistant",
+    "description": "AI-powered suggestions to improve your resume instantly.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI content suggestions", "Grammar correction", "Keyword optimization"],
+    "icon": "Cpu",
+    "image": "/shopping-cart.png"
+  },
+  {
+    "id": 9,
+    "name": "Premium Template Pack",
+    "description": "Access premium modern templates for professional use.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["200+ templates", "Modern design", "Lifetime access"],
+    "icon": "Layout",
+    "image": "/social-media.png"
+  },
+  {
+    "id": 10,
+    "name": "Ultimate Career Suite",
+    "description": "All-in-one career growth solution bundle.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Resume Builder", "Portfolio Builder", "AI Assistant", "Job Tracker"],
+    "icon": "Crown",
+    "image": "/writing_2327400 1.png"
+  }
+]
