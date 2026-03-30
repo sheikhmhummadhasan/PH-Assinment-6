@@ -31,7 +31,7 @@ const Simple_transperent = () => {
                         <p className='done'><MdDone className='i' /> somthing right</p>
                         <p className='done'><MdDone className='i' /> somthing right</p>
                         <p className='done'><MdDone className='i' /> somthing right</p>
-                        <button className="buy-now">Buy Now</button>
+                        <button className="buy-now buynow"><p>Buy Now</p></button>
                     </div>
                     <div className="cart">
                         

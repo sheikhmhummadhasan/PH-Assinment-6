@@ -1,0 +1,54 @@
+footer{
+    background-color: #101727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.f-1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.f-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.f-box-1 h1,.f-box-1 h3 ,.f-box-1 p{
+    color: #fff;
+}
+.f-box-2 h1,.f-box-2 h3{
+    color: #fff;
+}
+.f-box-3 h1,.f-box-3 h3{
+    color: #fff;
+}
+.f-box-4 h1,.f-box-4 h3{
+    color: #fff;
+}
+.f-box-5 h1,.f-box-5 h3{
+    color: #fff;
+}
+.f-2 p{
+    color: #fff;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.f path{
+    color: #fff;
+}
+@media screen and (max-width: 576px) {
+    .f-1{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .f-2{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}

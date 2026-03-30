@@ -1,11 +1,11 @@
 .hero {
-    margin-top: 200px;
+    margin-top: 0px;
     display: flex;
     max-width: 1480px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin: 200px auto 50px auto;
+    margin: 50px auto 50px auto;
 }
 
 .tools {
@@ -88,7 +88,7 @@
     .hero {
         margin-top: 300px;
         flex-direction: column;
-        width: 576px;
+        width: 100%;
         gap: 30px;
     }
 
@@ -105,5 +105,8 @@
 
     .h-box-2 {
         box-shadow: 5px 7px 15px #10172738;
+    }
+    .h-box-2 img{
+        height: 450px;
     }
 }

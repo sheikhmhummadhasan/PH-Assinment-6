@@ -53,12 +53,15 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
+    .started-cart{
+        width: 350px;
+    }
     .rander{
-        width: 576px;
+        width: 100%;
         padding: 20px;
     }
     .get-start{
-        width: 576px;
+        width: 100%;
         padding: 20px;
     }
 

@@ -10,11 +10,6 @@
      justify-content: space-between;
      align-items: center;
      padding: 30px;
-     box-shadow: 5px 0px 10px #101727;
-     position: fixed;
-     top: 0px;
-     left: 0px;
-     width: 100%;
      background-color: white;
 }
 .item-1, .item-2, .item-3{
@@ -51,7 +46,6 @@
 
 @media screen and (max-width:576px) {
     nav{
-        max-width: 576px;
         overflow-x: hidden;
         flex-direction: column;
         width: 100%;
@@ -70,8 +64,17 @@
     .text{
         margin: 0px;
     }
+    .hero{
+        margin: 0px;
+    }
     .prime-btn{
         padding: 5px 10px;
         font-size: 1rem;
+    }
+    .hero-btn,.heros-btn{
+        white-space: nowrap;
+    }
+    .hero-btns{
+        /* margin-left:50px; */
     }
 }
