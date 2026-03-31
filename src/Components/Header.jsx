@@ -22,6 +22,7 @@ const Header = ({ selected }) => {
                             <img src="/shopping-cart.png" alt="cart" height={30} />
                             <span className="cart-count">{selected.length}</span>
                         </div>
+                        <h3>Login</h3>
                         <button className="prime-btn">Get Started</button>
                     </div>
                 </nav>

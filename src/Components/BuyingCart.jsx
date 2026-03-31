@@ -14,8 +14,8 @@ const BuyingCart = ({ selected, handleRemove, handleClearCart }) => {
             {
                 selected.length === 0 ? <section className="buying-cart">
                     <div className="buying">
+                        <img src="/shopping-cart.png" alt="" height={50}/>
                         <h1>No Cart's Selected</h1>
-                        <p>Please Selecte A Cart</p>
                     </div>
                 </section> : <section className="selected-card">
                     <h1>Your Cart</h1>
@@ -39,10 +39,11 @@ const BuyingCart = ({ selected, handleRemove, handleClearCart }) => {
                             )
                         })
                     }
-                    <div className="hisab">
-                      <h2>Total : ${total}</h2> 
+                    <div className="sumof-product">
+                      <h2>Total </h2> 
+                      <h2>${total}</h2> 
                     </div>
-                    <div className="prime-btn" onClick={handleClearCart}>Proceed to Checkout</div>
+                    <div className="pro" onClick={handleClearCart}>Proceed to Checkout</div>
                 </section>
             }
 

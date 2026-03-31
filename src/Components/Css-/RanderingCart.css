@@ -27,18 +27,18 @@
 }
 
 .toggel-btn {
-    padding: 2px;
+    padding: 5px;
     background-color: #f6f6f6;
     width: 250px;
     margin: 0px auto;
-    border-radius: 25px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .toggel-deafult {
-    height: 30px;
+    height: 50px;
     border: none;
     background: linear-gradient(45deg,
             #4F39F6,
@@ -50,7 +50,7 @@
 }
 
 .toggel {
-    height: 30px;
+    height: 50px;
     border: none;
     color: #101727;
     width: 125px;
@@ -66,8 +66,14 @@
 
 .cart {
     padding: 20px;
-    box-shadow: 0px 0px 10px #627382;
+    box-shadow: 1px 1px 10px #627382;
     border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.cart:hover {
+    transform: scale(1.03);
+        cursor: pointer;
 }
 
 .best-seller {
@@ -194,10 +200,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px;
+    padding: 100px 0px;
     border: 3px solid #a1a9b0;
     margin: 50px auto;
     border-radius: 20px;
+    width: 1245px;
 }
 
 
@@ -210,13 +217,9 @@
     }
 
     .buying-cart {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         padding: 150px;
         border: 3px solid #a1a9b0;
-        width: 500px;
+        width: 100px;
         margin: 50px auto;
         border-radius: 20px;
     }
