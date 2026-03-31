@@ -51,4 +51,7 @@
         border-radius: 10px;
 
     }
+    .body{
+        max-width: 576px;
+    }
 }
